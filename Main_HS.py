@@ -1,4 +1,4 @@
-from Invoice import Invoice
+from Invoice_HS import Invoice
 
 products = {}
 total_amount = 0
