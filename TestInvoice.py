@@ -29,3 +29,11 @@ def test_canCalcuateTotalDiscount(invoice, products):
 def test_CanCalcuateTotalPurePrice(invoice, products):
     invoice.totalPurePrice(products)
     assert invoice.totalPurePrice(products) == 69.38
+
+def test_CanCalculateEmployeeDiscount(invoice, products):
+        invoice.totalEmployeePrice(products)
+        assert invoice.totalEmployeePrice(products) == 25
+
+def test_CanCalculateCEODiscount(invoice, products):
+            invoice.totalBossPrice(products)
+            assert invoice.totalBossPrice(products) == 0
